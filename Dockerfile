@@ -8,6 +8,7 @@ RUN sh Miniconda3-latest-Linux-x86_64.sh -b
 ENV PATH=/root/miniconda3/bin:$PATH
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+RUN conda update conda
 ADD env.yaml .
 RUN conda env update --name env --file env.yaml
 ENV PATH=/root/miniconda3/envs/env/bin:$PATH
