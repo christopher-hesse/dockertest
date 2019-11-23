@@ -2,6 +2,6 @@
 Base docker image for testing
 
 ```
-docker build . --tag dockertest:v<version>
-docker push dockertest:v<version>
+docker build . --tag christopherhesse/:v<version>
+docker push christopherhesse/:v<version>
 ```
