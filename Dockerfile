@@ -13,4 +13,4 @@ ADD env.yaml .
 RUN conda env update --name env --file env.yaml
 ENV PATH=/root/miniconda3/envs/env/bin:$PATH
 RUN go get -u github.com/sqs/goreturns
-RUN npm install -g pyright@1.1.3
+RUN npm install -g pyright@1.1.5
